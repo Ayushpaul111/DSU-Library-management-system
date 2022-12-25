@@ -1,0 +1,58 @@
+<section id="get-a-quote" class="get-a-quote">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row g-0">
+
+          <div class="col-lg-5 quote-bg" style="background-image: url(assets/img/quote-bg.jpg);"></div>
+
+          <div class="col-lg-7">
+            <!-- <form action="forms/quote.php" method="post" class="php-email-form"> -->
+              <h3>Scan Your ID</h3>
+              <p>Scan the barcode present in your ID card.</p>
+              <div class="row gy-4">
+          <!-- <div class="col-md-6">
+                  <input type="text" name="departure" class="form-control" placeholder="City of Departure" required>
+                </div>
+
+                <div class="col-md-6">
+                  <input type="text" name="delivery" class="form-control" placeholder="Delivery City" required>
+                </div>
+
+                <div class="col-md-6">
+                  <input type="text" name="weight" class="form-control" placeholder="Total Weight (kg)" required>
+                </div>
+
+                <div class="col-md-6">
+                  <input type="text" name="dimensions" class="form-control" placeholder="Dimensions (cm)" required>
+                </div> -->
+
+                <div>
+                  <div class="container">  
+                    <form id="contact" action="" method="post">
+                      <h3>Scan</h3>
+                      <h4>or enter manually</h4>
+                      <fieldset>
+                        <input placeholder="Your name" type="text" tabindex="1" required autofocus>
+                      </fieldset>
+                      <fieldset>
+                        <input placeholder="Your Email Address" type="email" tabindex="2" required>
+                      </fieldset>
+                      <fieldset>
+                        <input placeholder="Your Phone Number (optional)" type="tel" tabindex="3" required>
+                      </fieldset>
+                      <fieldset>
+                        <input placeholder="Your Web Site (optional)" type="url" tabindex="4" required>
+                      </fieldset>
+                      <fieldset>
+                        <textarea placeholder="Type your message here...." tabindex="5" required></textarea>
+                      </fieldset>
+                      <fieldset>
+                        <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+                      </fieldset>
+                      <p class="copyright">Designed by <a href="https://colorlib.com" target="_blank" title="Colorlib">Colorlib</a></p>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
