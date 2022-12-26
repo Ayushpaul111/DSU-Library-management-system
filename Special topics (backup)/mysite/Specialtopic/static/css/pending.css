@@ -1,0 +1,370 @@
+:root {
+    --background-color: #ffe5e5;
+    --color: #000000;
+    --feedback-bg-color: #ffffff;
+    --feedback-secondary-color: #2756ff;
+    --feedback-primary-color: #ffffff;
+    --feedback-icon-color: #ffffff;
+    --feedback-form-input: #2518dc;
+  }
+  
+  body {
+    font-family: "DM Sans", sans-serif;
+    background-color: var(--feedback-primary-color);
+  }
+  
+  .center-content, .submit-feedback, .container {
+    display: grid;
+    place-content: center;
+  }
+  
+  .submit-feedback {
+    padding: 10px 30px;
+    font-size: 24px;
+    cursor: pointer;
+    border-radius: 7px;
+    border-bottom-left-radius: 0;
+    background-color: var(--feedback-secondary-color);
+    color: var(--feedback-primary-color);
+    transition: all 0.3s;
+  }
+  .submit-feedback:hover {
+    border-radius: 0px;
+    color: var(--feedback-primary-color);
+    --feedback-primary-color: #000000;
+    background-color: var(--background-color);
+    background-image: url("data:image/svg+xml,%3Csvg width='52' height='26' viewBox='0 0 52 26' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffacac' fill-opacity='0.4'%3E%3Cpath d='M10 10c0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6h2c0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4v2c-3.314 0-6-2.686-6-6 0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6zm25.464-1.95l8.486 8.486-1.414 1.414-8.486-8.486 1.414-1.414z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    animation: animatedBackground 5s linear infinite alternate;
+  }
+  
+  .cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    
+    .card {
+      margin: 20px;
+      padding: 20px;
+      width: 500px;
+      min-height: 200px;
+      display: grid;
+      grid-template-rows: 20px 50px 1fr 50px;
+      border-radius: 10px;
+      box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.25);
+      transition: all 0.2s;
+    }
+    
+    .card:hover {
+      box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.4);
+      transform: scale(1.01);
+      
+    }
+    
+    .card__link,
+    .card__exit,
+    .card__icon {
+      position: relative;
+      text-decoration: none;
+      color: rgba(10, 5, 5, 0.9);
+  
+      
+    }
+  
+    .card__link:hover{
+      font-size: 20px;
+    }
+    
+    .card__link::after {
+      position: absolute;
+      top: 25px;
+      left: 0;
+      content: "";
+      width: 0%;
+      height: 3px;
+      background-color: rgba(255, 255, 255, 0.6);
+      transition: all 0.5s;
+      
+    }
+    
+    .card__link:hover::after {
+      width: 100%;
+      
+    }
+    
+    .card__exit {
+      grid-row: 1/2;
+      justify-self: end;
+    }
+    
+    .card__icon {
+      grid-row: 2/3;
+      font-size: 30px;
+    }
+    
+    .card__title {
+      grid-row: 3/4;
+      font-weight: 300;
+      color: #201919;
+    }
+    
+    .card__apply {
+      grid-row: 4/5;
+      align-self: center;
+    }
+  .card-1 {
+    background: radial-gradient(#4540ee, #4540ee);
+    }
+    
+    .card-2 {
+    background: radial-gradient(#4540ee,  #4540ee);
+    opacity:1;
+    height:10cm;
+    width: 25cm;
+    
+    }
+    
+    .card-3 {
+    
+    background: radial-gradient(#4540ee, #4540ee);
+    }
+    
+    .card-4 {
+    height: 10cm;
+    background: radial-gradient(#4540ee, #4540ee);
+      opacity: 0.7 ;
+    }
+    
+    .card-5 {
+    background: radial-gradient(#4540ee, #4540ee);
+    }
+  
+    /* RESPONSIVE */
+  
+  @media (max-width: 1600px) {
+    .cards {
+      justify-content:"center";
+    }
+    }
+    :root {
+      --background-color: #ffe5e5;
+      --color: #000000;
+      --feedback-bg-color: #ffffff;
+      --feedback-secondary-color: #2756ff;
+      --feedback-primary-color: #ffffff;
+      --feedback-icon-color: #ffffff;
+      --feedback-form-input: #2518dc;
+    }
+    
+    body {
+      font-family: "DM Sans", sans-serif;
+      background-color: var(--feedback-primary-color);
+    }
+    
+    .center-content, .submit-feedback, .container {
+      display: grid;
+      place-content: center;
+    }
+    
+    .submit-feedback {
+      padding: 10px 30px;
+      font-size: 24px;
+      cursor: pointer;
+      border-radius: 7px;
+      border-bottom-left-radius: 0;
+      background-color: var(--feedback-secondary-color);
+      color: var(--feedback-primary-color);
+      transition: all 0.3s;
+    }
+    .submit-feedback:hover {
+      border-radius: 0px;
+      color: var(--feedback-primary-color);
+      --feedback-primary-color: #000000;
+      background-color: var(--background-color);
+      background-image: url("data:image/svg+xml,%3Csvg width='52' height='26' viewBox='0 0 52 26' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffacac' fill-opacity='0.4'%3E%3Cpath d='M10 10c0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6h2c0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4v2c-3.314 0-6-2.686-6-6 0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6zm25.464-1.95l8.486 8.486-1.414 1.414-8.486-8.486 1.414-1.414z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+      animation: animatedBackground 5s linear infinite alternate;
+    }
+    
+    .card-1 {
+      background: radial-gradient(#4540ee, #4540ee);
+      }
+      
+      .card-2 {
+      background: radial-gradient(#4540ee,  #4540ee);
+      opacity:1;
+      height:20cm;
+      width: 30cm;
+      
+      }
+      
+      .card-3 {
+      
+      background: radial-gradient(#4540ee, #4540ee);
+      }
+      
+      .card-4 {
+      height: 10cm;
+      background: radial-gradient(#4540ee, #4540ee);
+        opacity: 0.7 ;
+      }
+      
+      .card-5 {
+      background: radial-gradient(#4540ee, #4540ee);
+      }
+  
+      /* RESPONSIVE */
+    
+    @media (max-width: 1600px) {
+      .cards {
+        justify-content: center;
+      }
+      }
+      
+      .narrow_bar{
+      height:1cm;
+      width:29cm;
+      background-color: white;
+      border-radius: 15px;
+      margin-top:0.5px;
+      
+      }
+    
+      .white_card{
+      background-color: ivory;
+      height:15cm;
+      width: 15cm;
+      align-items: center;
+      margin-left: 3cm;
+      margin-top: 2cm;
+      border-radius: 45px;
+      padding-top: 2cm;
+      padding-left: 3cm;
+      
+    
+      }
+    
+    
+    
+    
+    
+      @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500');
+    *{
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      text-decoration: none;
+    }
+    body {
+      font-family: 'Roboto', sans-serif;
+    }
+    .sidebar {
+      position: fixed;
+      left: -250px;
+      width: 250px;
+      height: 100%;
+      background: #042331;
+      transition: all .5s ease;
+    }
+    .sidebar header {
+      font-size: 22px;
+      color: white;
+      line-height: 70px;
+      text-align: center;
+      background: #063146;
+      user-select: none;
+    }
+    .sidebar ul a{
+      display: block;
+      height: 100%;
+      width: 100%;
+      line-height: 65px;
+      font-size: 20px;
+      color: white;
+      padding-left: 40px;
+      box-sizing: border-box;
+      border-bottom: 1px solid black;
+      border-top: 1px solid rgba(255,255,255,.1);
+      transition: .4s;
+    }
+    /* ul li:hover a{
+      padding-left: 50px;
+    }
+    .sidebar ul a i{
+      margin-right: 16px;
+    } */
+    #check{
+      display: none;
+    }
+    label #btn,label #cancel{
+      position: absolute;
+      background: #042331;
+      border-radius: 3px;
+      cursor: pointer;
+    }
+    label #btn{
+      left: 40px;
+      top: 25px;
+      font-size: 35px;
+      color: white;
+      padding: 6px 12px;
+      transition: all .5s;
+    }
+    label #cancel{
+      z-index: 1111;
+      left: -195px;
+      top: 17px;
+      font-size: 30px;
+      color: #0a5275;
+      padding: 4px 9px;
+      transition: all .5s ease;
+    }
+    
+    #check:checked ~ .sidebar{
+      left: 0;
+    }
+    #check:checked ~ label #btn{
+      left: 250px;
+      opacity: 0;
+      pointer-events: none;
+    }
+    #check:checked ~ label #cancel{
+      left: 195px;
+    }
+    #check:checked ~ section{
+      margin-left: 250px;
+    }
+    section{
+      background: url(bg.jpeg) no-repeat;
+      background-position: center;
+      background-size: cover;
+      height: 100vh;
+      transition: all .5s;
+    }
+    
+    
+    
+    .tooltip {
+      position: relative;
+      display: inline-block;
+      border-bottom: 1px dotted black;
+    }
+    
+    .tooltip .tooltiptext {
+      visibility: hidden;
+      width: 120px;
+      background-color: black;
+      color: #fff;
+      text-align: center;
+      border-radius: 6px;
+      padding: 5px 0;
+    
+      /* Position the tooltip */
+      position: absolute;
+      z-index: 1;
+    }
+    
+    .tooltip:hover .tooltiptext {
+      visibility: visible;
+    }
+    .size_of_img{
+    width:90px}
